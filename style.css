@@ -1,0 +1,393 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: poppins;
+    transition: all 0.1s;
+}
+html , body{
+    width: 100%;
+    height: 100%;
+     color: #fff;background-color: black;
+}
+a{
+    text-decoration: none !important;
+}
+::-webkit-scrollbar{
+    color: white;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-button{
+    color: black;
+}
+#minicircle{
+    width: 11px;
+    height: 11px;
+    position: fixed;
+    z-index: 1;
+    border-radius: 50%;
+    pointer-events: none !important;
+    background-color: white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+@media (max-width: 768px){
+	#minicircle{
+		display:none;
+	}
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+.btm{
+    font-size: 10px !important;
+}
+#main{
+    width: 100%;
+    z-index: 1;
+}
+.hero{
+    width: 100%;
+}
+.nav{
+    position: relative;
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+.heading{
+    margin-top: 85px;
+}
+.heading .secondh1{
+    margin-left: 180px;
+    margin-top: -20px;
+}
+@media (max-width:790px) {
+    .heading .secondh1{
+        margin-left: 100px;
+        margin-top: -5px;
+    }
+}
+.heading h1{
+    margin-left: 30px;
+    font-size: 11vw;
+    text-transform: uppercase;
+    font-weight: 200;
+    line-height: 1;
+    opacity: 0.6;
+}
+.blocktext{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    width: fit-content; 
+}
+
+.blocktext h5{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: right;
+}
+.small-heading{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 75px;
+    padding-right: 3vw;
+}
+.small-heading h5{
+    text-transform: uppercase;
+    margin-top: .6vw;
+    font-weight: 200;
+    font-size: 1.2vw;
+    text-align: end;
+}
+.hero-footer{
+    padding: 2.5vw 2vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-footer a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.hero-footer .iconset{
+    display: flex;
+    gap: 5px;
+}
+.hero-footer .circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #886;   
+}
+
+.second{
+    padding-top: 200px;
+    width: 100%;
+    padding-right: 10vw;
+}
+.elem{
+    position: relative;
+    width: 100%;
+    padding: 3vw 3vw;
+    padding-right: 0;
+    font-size: 4vw;
+    color: rgb(162, 162, 162);
+    opacity: 1;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.elem:hover{
+    color: rgb(62, 62, 62);
+}
+.h1{
+    transition: .6s ease;
+}
+.h2{
+    transition: .6s ease;
+}
+
+.h3{
+    transition: .6s ease;
+}
+.elem:hover .h1{
+    transform: translateX(25px);
+}
+
+.elem:hover .h2{
+    transform: translateX(25px);
+}
+.elem:hover .h3{
+    transform: translateX(25px);
+}
+.elem h1{
+    font-weight: 200;
+}
+.elem h5{
+    font-size: 1vw;
+}
+hr{
+    margin-left: 40px;
+    opacity: 0.7;
+}
+
+.about{
+    width: 100%;
+    padding: 14vw 0vw;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding-left: 32.9vw;
+
+}
+.lets-talk{
+    transition: all 0.4s ease;
+}
+.lets-talk:hover{
+    color: black;
+    background-color: white;
+}
+.text-about{
+    width: 25rem;
+
+}
+.text-about h5{
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+.text-about p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.text-about a{
+    cursor: pointer;
+    padding: 5px 20px ;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: white;
+}
+.about img{
+    width: 200px;
+}
+.subscribe{
+    color: white;
+    padding-bottom: 8vw;
+    padding: 20px 30px;
+}
+.subscribe h5{
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+.subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+.footerleft{
+    display: flex;
+    gap: 20px;
+}
+.footerright{
+    display: flex;
+    gap: 30px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+@media (max-width:1200px) {
+    .about{
+        padding-left: 250px ;
+    }
+}
+@media (max-width:1100px) {
+    .about{
+        padding-left: 150px ;
+    }
+}
+
+@media (max-width: 768px) {
+    .about{
+        padding: 30px;
+        margin-top: 100px;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .second{
+        padding-top: 100px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .text-about{
+        width: auto;
+    
+    }
+    .amb{
+        display: none;
+    }
+    .elem{
+        padding-inline: 40px;
+    }
+    .elem h5{
+        font-size: 13px;
+    }
+    .subscribe{
+        padding: 15px 20px;
+    }
+    .footerleft{
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .footer{
+        align-items: start;
+    }
+    .footerright a{
+        font-size: 11px;
+    }
+    .bounding h5{
+        font-size: 10px;
+    }
+}
+/* animated hover */
+.hover-a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hover-a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+.hover-a:hover::after {
+    width: 100%;
+}
+
+.amb {
+    position: relative;
+}
+
+.amb::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+    transform-origin: right center;
+}
+
+.amb:hover::after {
+    width: 100%;
+    transform-origin: left center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
